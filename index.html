@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet">
+    <style>
+div.gallery {
+    border: 1px solid #ccc;
+}
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+</style>
+
+<ul class="navigation">
+    <li><img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-9/htmlcss1-img_logo-shiptoit.png" height="20px;"></li>
+    <li class="active">Action List</li>
+    <li>Profiles</li>
+    <li>Settings</li>
+  </ul>
+
+
+</head>
+<body>
+
+	<!-- <img src="img/OtakuLove.jpg"> -->
+
+	<!--Match the id of #top to take you up from footer-->
+    <header id="#top" class="main-header">
+      <span class="title">Welcome to ....</span>
+      <h1 class="geeklandia">GEEKLANDIA!!</h1>
+    </header>
+    <div class="primary-content t-border">
+    <p class="ali">
+      Let us kickback, chillax, debate, regurgitate, battle, kerfuffle, and muddle our thoughts out here in the digital ether.
+    </p>
+    <a class="callout" href="https://www.youtube.com/watch?v=HUdUvvk3Yw8">Pumpkin Dance - Halloween Song</a>
+    <div class="wildlife">
+    <h2 class="pad">There be fanatical fans the likes of which youve never seen</h2>
+        <p class="poipoi">
+          Strap-on your Proton Packs! Gather your Infinity Stones! Lasso the truth! We've got <a href="http://starwars.wikia.com/wiki/Jedi">Jedi</a>, <a href="http://powerlisting.wikia.com/wiki/Superpower_Wiki">Superheroes</a>, and <a href="https://www.urbandictionary.com/define.php?term=bishie">bishy boys</a>.
+        </p>
+    </div>
+
+
+
+<!--             ///   LIST OF THINGS TO DO TO SITE:
+         - MAKE MY BORDERBOX WITH DEADPOOL STARE SMALLER
+         - MAKE IT WIDER AS WELL
+         - MOVE MY TWO IMAGE BUTTONS BELOW THE PICTURE
+         - CHANGE THE INFO AND WORDING
+         - PUT IN MY TABLE MANGA/ANIME RECCOMENDATIONS
+         - ADD MORE SWAG
+         - ADD MORE JAVASCRIPT
+         - ADD MORE CONTENT
+         - ADD MANGA RESPONSIVE IMAGE MANGA COVERS THAT ARE SAFE FOR WORK -->
+         <div class="primary-content t-border">
+
+         <p id="demo" style="display:none">WECOME MY FAN-GIRLS/BOYS/AND NON-BINARY JOYS!!!!</p>
+
+        <button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+        <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+        </div>
+
+      <p class="calling"><a class="callout" href="#">Check out some 'CONS!!</a></p>
+
+
+      </div>
+      <div class="buttonbox">
+        <button onclick="document.getElementById('myImage').src='img/100percentOtaku.gif'">Otaku's CLICK here!!</button>
+
+          <img id="myImage" src="img/Welcome.UtaNoPrinceSama.jpg" style= "width:500px">
+
+          <button onclick="document.getElementById('myImage').src='img/Me-andBLtbh.png'">Fujo/Fudan-shi's CLICK here</button>
+      </div>
+      <div>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+      </div>
+
+      <div class="secondary-content t-border group">
+      <div class="resorts">
+     <!--  <img src="img/resort.jpg" alt="Resort"> -->
+      <h3 class="poi">Oh the Places You'll Go</h3>
+      <p class="ali">
+        The Internet is a big place. It's so big that if you lost your car keys in it they could be sold on Ebay the same day with overnight shipping. Here are a few of the vast resources to stay in the ever changing loop of all things Geeky:
+      </p>
+      <ul>
+          <li><a href="https://kotaku.com/">Kotaku</a></li>
+          <li><a href="https://myanimelist.net/">myanimelist</a></li>
+          <li><a href="http://www.ign.com/">IGN</a></li>
+           <li><a href="https://www.comixzone.com/index.asp">COMIX ZONE</a></li>
+      </ul> 
+      </div>
+      <div class="tips">  
+      <!-- <img src="img/resort.jpg" width="250px", height="250px" alt="resort">  -->
+      <h3 class="poi">It's Dangerous to Go Alone</h3>
+      <p class="ali">
+        Traversing the various fandoms, lore, and memes can be a harrowing task. You must prepare both mind and body to remain afloat. Here are a few tips:
+      </p>
+        <ol class="orderedList">
+            <li>Thick skin (no one likes a crier)</li>
+            <li>Grammarly for all your grammar fallacies</li>
+            <li>Wikipedia because when you win a pointless internet argument you'll want to win with facts</li>
+            <li>A lo-fi music stream because sometimes you need to unwind #treatyoself</li>
+        </ol>
+      </div>
+    </div>
+
+
+<h1 class="BLtable">Highest Grossing Comic Book Movies</h1>
+
+  
+  <table>
+    <thead>
+      <tr>
+      	<th>RANK #</th>
+        <th>Movie Name</th>
+        <th>Release Date</th>
+        <th>Lifetime BoxOffice Gross</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      	<td>Number ONE:</td>
+        <td>Marvel's The Avengers</td>
+        <td>05/04/2012</td>
+        <td>$623,357,910</td>
+      </tr>
+      <tr>
+      	<td>Numba TWOOO:</td>
+        <td>Black Panther</td>
+        <td>02/16/2018</td>
+        <td>$562,015,601</td>
+      </tr>
+      <tr>
+      	<td>Numero Tres:</td>
+        <td>The Dark Knight</td>
+        <td>07/18/2018</td>
+        <td>$534,858,444</td>
+      </tr>
+      <tr>
+      	<td>Quatre! Tres bien!!:</td>
+        <td>Avengers: Age of Ultron</td>
+        <td>05/01/2015</td>
+        <td>$459,005,868</td>
+      </tr>
+      <tr>
+      	<td>HIGH FIVE:</td>
+        <td>The Dark Knight Rises</td>
+        <td>07/20/2012</td>
+        <td>$448,139,099</td>
+      </tr>
+      <tr>
+      	<td>66666666!!!:</td>
+        <td>Wonder Woman</td>
+        <td>06/02/17</td>
+        <td>$412,563,408</td>
+      </tr>
+      <tr>
+      	<td>SEVEN 7~:</td>
+        <td>Iron Man 3</td>
+        <td>05/03/2013</td>
+        <td>$409,013,994</td>
+      </tr>
+      <tr>
+      	<td>Eight 8!!:</td>
+        <td>Captain America: Civil War</td>
+        <td>05/03/2013</td>
+        <td>$408,084,349</td>
+      </tr>
+      <tr>
+      	<td>NINENINENINE!:</td>
+        <td>Spider-Man</td>
+        <td>05/06/2016</td>
+        <td>$403,706,375</td>
+      </tr>
+      <tr>
+      	<td>Numero Dies 10~:</td>
+        <td>Guardians of the Galaxy Vol.2</td>
+        <td>05/05/2017</td>
+        <td>$389,813,101</td>
+      </tr>
+      <tr>
+      	<td># Eleven 11~:</td>
+        <td>Spider-Man 2</td>
+        <td>06/30/2004</td>
+        <td>$373,585,825</td>
+      </tr>
+      <tr>
+      	<td>TWELVE YES YAY!:</td>
+        <td>Deadpool</td>
+        <td>02/12/2016</td>
+        <td>$363,070,709</td>
+      </tr>
+      <tr>
+      	<td>Thirteen #13:</td>
+        <td>Spider-Man 3</td>
+        <td>05/04/2007</td>
+        <td>$336,530,303</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <td>From WEBSITE:</td>
+			<td>Comic Book Adaptations</td>
+			<td>These are such great Movies! the site link is <a href="http://www.boxofficemojo.com/genres/chart/?id=comicbookadaptation.htm">HERE!</a></td>
+			<td>THESE MADE SURPRISING AMOUNTS OF $$$$$$</td>
+    </tfoot>
+  </table>
+ <p class="comic"></p>
+
+
+<h1>MCU CHRONOLOGY:</h1>
+<p class="ali">The Best and ACTUAL order of the movies and tv shows I found. Im not really sure why Deadpool and the X-Men movies aren't included i'll add them and a few more interesting Super like movies in the future! Perhaps even add the DCU and cartoons to! :D The link to the list I used are "<a href="http://digg.com/2017/how-to-watch-all-of-marvel-cinematic-universe">here</a>" and this link "<a href="https://www.quora.com/In-which-order-should-one-watch-all-the-Marvel-movies-and-TV-shows">here</a>" gives u awesome short descriptions about each one but a slightly different order and possibly SPOILERS. I made tht big so you have been warned. Im going to link the movies themselves to something cool I found for some of them or to their Wikia. Click 'em and find out whats in store ~wooooooo~.</p>
+<ul class="mcu">
+	<li><a href="https://www.youtube.com/watch?v=TyB5snutlI4">Iron Man - (2008)</a></li> <!-- Tony Stark | Applause -->
+	<li><a href="https://www.youtube.com/watch?v=XnYC2MiC-Xg">Iron Man 2 - (2010)</a></li> <!-- Tony Stark | 99 problems MEP -->
+	<li><a href="https://www.youtube.com/watch?v=FJVuBlHibSY">The Incredible Hulk - (2008)</a></li><!-- FULL LENGTH 22min EPISODEHulk Gets Amnesia! | Marvel's Avengers Assemble S1 Ep14 (FULL EPISODE) | Hulk's Day Out -->
+	<li><a href="https://www.youtube.com/watch?v=3Z3cpB9BZrw">Thor - (2011)</a></li> <!-- Loki Laufeyson ♚ Look What You Made Me Do -->
+	<li><a href="https://youtu.be/a7fzkqLozwA">Captain America: The First Avenger - (2011)</a></li> <!-- Stucky: I like me better when I'm with you by Lauv -->
+    <li><a href="https://youtu.be/-KlzhyvRlho">Marvel's The Avengers - (2012)</a></li> <!-- Tony/loki i hate your boyfriend -->
+	<li><a href="https://www.youtube.com/watch?v=LrxbQzvn9os">Iron Man 3 (2013)</a></li><!-- Tony Stark | Thrift Shop -->
+	<li><a href="#">Thor: The Dark World (2013)</a></li>
+	<li><a href="https://www.youtube.com/watch?v=OEKoHjMVgdo">Guardians of the Galaxy (2014)</a></li> <!-- Marvel Humor AMV Come with me now -->
+	<li><a href="https://www.youtube.com/watch?v=193VcI3XAWY">Guardians of the Galaxy Vol. 2 (2017)</a></li><!-- Guardians of the Galaxy Feel it still amv-->
+	<li><a href="#">Captain America: The Winter Soldier (2014)</a></li>
+	<li><a href="#">Agents of S.H.I.E.L.D. Season 1 (2013)</a></li>
+	<li><a href="#">Daredevil Season 1 (2015)</a></li>
+	<li><a href="#">Avengers: Age of Ultron (2014)</a></li>
+	<li><a href="#">Agents of S.H.I.E.L.D. Season 2 (2014)</a></li>
+	<li><a href="#">Jessica Jones Season 1 (2015)</a></li>
+	<li><a href="#">Daredevil Season 2 (2016)</a></li>
+	<li><a href="#">Doctor Strange (2016)</a></li>
+	<li><a href="#">Luke Cage Season 1 (2016)</a></li>
+	<li><a href="#">Captain America: Civil War (2016)</a></li>
+	<li><a href="#">Black Panther (2018)</a></li>
+	<li><a href="#">Agent Carter Seasons 1 and 2 (2015-16)</a></li>
+    <li><a href="#">Agents of S.H.I.E.L.D. Seasons 3 and 4 (2015-16)</a></li>
+    <li><a href="#">Iron Fist Season 1 (2017)</a></li>
+	<li><a href="#">The Defenders Season 1 (2017)</a></li>
+	<li><a href="#">Thor: Ragnarok (2017)</a></li>
+	<li><a href="https://www.youtube.com/watch?v=kqF7TlZW0dU">Spider-Man: Homecoming (2017)</a></li> <!-- ● tom holland being a meme for 7 minutes straight
+9,990 views -->
+</ul>
+   
+<!-- OTHER SONG LINKS TO CHOOSE FROM
+https://www.youtube.com/watch?v=JjKjM4OswjA&t=19s  ||| Spider-Man (Peter Parker) // Everybody Loves Me
+
+ -->
+
+
+
+
+<h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/AreYouOtaku.jpg">
+      <img src="img/AreYouOtaku.jpg" alt="Otaku Love 4 life" width="300" height="200">
+    </a>
+    <div class="desc">How to know if your an Otaku. If you fit at least 3 or 4 ...you are.</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/ProudOtaku.jpg">
+      <img src="img/ProudOtaku.jpg" alt="OtakuPrideList" width="600" height="400">
+    </a>
+    <div class="desc">A list of what we Otaku's rare proud of.</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/FujoshiWarning-DevArt.jpg">
+      <img src="img/FujoshiWarning-DevArt.jpg" alt="WARNING!!!!" width="600" height="400">
+    </a>
+    <div class="desc">Fujoshi's Rule the World!!! :D</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img/Fujo-Fudanshi.jpg">
+      <img src="img/Fujo-Fudanshi.jpg" alt="PrettyCollage" width="600" height="400">
+    </a>
+    <div class="desc">This is so freaking fun when it works!!!!</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <!-- <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p> -->
+  <p>This is Jojo I LOVE THIS CODE I FOUND!!!!! WOOOOO</p>
+</div>
+
+
+    <footer id="main-footer" class="t-border">
+      <p>All rights reserved to <a href="http://www.zipcodewilmington.com">JoJo ALi Worldwide!!</a>.</p>
+      <a href="#top">Back to top &raquo;</a>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
